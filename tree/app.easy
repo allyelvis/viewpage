@@ -1,0 +1,351 @@
+{
+    "_id_": 1,
+    "_type": "App",
+    "features": {
+        "_id_": 2,
+        "_type": "App.Features",
+        "list_": [
+            {
+                "_id_": 3,
+                "_type": "Variable",
+                "init": {
+                    "_id_": 4,
+                    "_type": "Array",
+                    "items": {
+                        "_id_": 5,
+                        "_type": "List",
+                        "list_": [
+                            {
+                                "_id_": 6,
+                                "_type": "AnObject",
+                                "fields": {
+                                    "_id_": 7,
+                                    "_type": "List",
+                                    "list_": [
+                                        {
+                                            "_id_": 8,
+                                            "_type": "KeyValue",
+                                            "value": {
+                                                "_id_": 9,
+                                                "_type": "String",
+                                                "value_": "page1"
+                                            },
+                                            "key": {
+                                                "_id_": 10,
+                                                "_type": "String",
+                                                "value_": "name"
+                                            }
+                                        },
+                                        {
+                                            "_id_": 11,
+                                            "_type": "KeyValue",
+                                            "value": {
+                                                "_id_": 12,
+                                                "_type": "String",
+                                                "value_": "Page 1"
+                                            },
+                                            "key": {
+                                                "_id_": 13,
+                                                "_type": "String",
+                                                "value_": "title"
+                                            }
+                                        }
+                                    ],
+                                    "elementType_": "KeyValue"
+                                }
+                            },
+                            {
+                                "_id_": 14,
+                                "_type": "AnObject",
+                                "fields": {
+                                    "_id_": 15,
+                                    "_type": "List",
+                                    "list_": [
+                                        {
+                                            "_id_": 16,
+                                            "_type": "KeyValue",
+                                            "value": {
+                                                "_id_": 17,
+                                                "_type": "String",
+                                                "value_": "page2"
+                                            },
+                                            "key": {
+                                                "_id_": 18,
+                                                "_type": "String",
+                                                "value_": "name"
+                                            }
+                                        },
+                                        {
+                                            "_id_": 19,
+                                            "_type": "KeyValue",
+                                            "value": {
+                                                "_id_": 20,
+                                                "_type": "String",
+                                                "value_": "Page 2"
+                                            },
+                                            "key": {
+                                                "_id_": 21,
+                                                "_type": "String",
+                                                "value_": "title"
+                                            }
+                                        }
+                                    ],
+                                    "elementType_": "KeyValue"
+                                }
+                            },
+                            {
+                                "_id_": 22,
+                                "_type": "AnObject",
+                                "fields": {
+                                    "_id_": 23,
+                                    "_type": "List",
+                                    "list_": [
+                                        {
+                                            "_id_": 24,
+                                            "_type": "KeyValue",
+                                            "value": {
+                                                "_id_": 25,
+                                                "_type": "String",
+                                                "value_": "page3"
+                                            },
+                                            "key": {
+                                                "_id_": 26,
+                                                "_type": "String",
+                                                "value_": "name"
+                                            }
+                                        },
+                                        {
+                                            "_id_": 27,
+                                            "_type": "KeyValue",
+                                            "value": {
+                                                "_id_": 28,
+                                                "_type": "String",
+                                                "value_": "Page 3"
+                                            },
+                                            "key": {
+                                                "_id_": 29,
+                                                "_type": "String",
+                                                "value_": "title"
+                                            }
+                                        }
+                                    ],
+                                    "elementType_": "KeyValue"
+                                }
+                            }
+                        ],
+                        "elementType_": "Action"
+                    }
+                },
+                "name": {
+                    "_id_": 30,
+                    "_type": "String",
+                    "value_": "pages"
+                }
+            },
+            {
+                "_id_": 31,
+                "_type": "Activity",
+                "features": {
+                    "_id_": 32,
+                    "_type": "Activity.Features",
+                    "list_": []
+                },
+                "theme": {
+                    "_id_": 33,
+                    "_type": "Theme.DayNight"
+                },
+                "contentView": {
+                    "_id_": 34,
+                    "_type": "ViewPager",
+                    "tabs": {
+                        "_id_": 35,
+                        "_type": "TabLayout",
+                        "id": {
+                            "_id_": 36,
+                            "_type": "String",
+                            "value_": ""
+                        }
+                    },
+                    "id": {
+                        "_id_": 37,
+                        "_type": "String",
+                        "value_": ""
+                    },
+                    "adapter": {
+                        "_id_": 38,
+                        "_type": "ViewPager.Adapter",
+                        "layout": {
+                            "_id_": 39,
+                            "_type": "WebView",
+                            "includeApi": {
+                                "_id_": 40,
+                                "_type": "WebView.Api",
+                                "webView": {
+                                    "_id_": 41,
+                                    "_type": "Boolean",
+                                    "value_": true
+                                }
+                            },
+                            "id": {
+                                "_id_": 42,
+                                "_type": "String",
+                                "value_": ""
+                            },
+                            "urlValue": {
+                                "_id_": 43,
+                                "_type": "String.Concat",
+                                "values": {
+                                    "_id_": 44,
+                                    "_type": "List",
+                                    "list_": [
+                                        {
+                                            "_id_": 45,
+                                            "_type": "String.Text",
+                                            "value": {
+                                                "_id_": 46,
+                                                "_type": "String",
+                                                "value_": "file:\/\/\/assets\/"
+                                            }
+                                        },
+                                        {
+                                            "_id_": 47,
+                                            "_type": "Field.Get",
+                                            "name": {
+                                                "_id_": 48,
+                                                "_type": "String",
+                                                "value_": "name"
+                                            },
+                                            "object": {
+                                                "_id_": 49,
+                                                "_type": "ViewPager.AdapterData"
+                                            }
+                                        },
+                                        {
+                                            "_id_": 50,
+                                            "_type": "String.Text",
+                                            "value": {
+                                                "_id_": 51,
+                                                "_type": "String",
+                                                "value_": ".html"
+                                            }
+                                        }
+                                    ],
+                                    "elementType_": "Action"
+                                }
+                            }
+                        },
+                        "tabTitle": {
+                            "_id_": 52,
+                            "_type": "Field.Get",
+                            "name": {
+                                "_id_": 53,
+                                "_type": "String",
+                                "value_": "title"
+                            },
+                            "object": {
+                                "_id_": 54,
+                                "_type": "ViewPager.AdapterData"
+                            }
+                        },
+                        "data": {
+                            "_id_": 55,
+                            "_type": "Variable.Get",
+                            "name": {
+                                "_id_": 56,
+                                "_type": "String",
+                                "value_": "pages"
+                            }
+                        }
+                    }
+                },
+                "name": {
+                    "_id_": 57,
+                    "_type": "String",
+                    "value_": "Main"
+                },
+                "launcher": {
+                    "_id_": 58,
+                    "_type": "Activity.Launcher"
+                }
+            }
+        ]
+    },
+    "settings": {
+        "_id_": 59,
+        "_type": "App.Settings",
+        "debugBuild": {
+            "_id_": 60,
+            "_type": "App.Settings.DebugBuild"
+        },
+        "releaseBuild": {
+            "_id_": 61,
+            "_type": "App.Settings.ReleaseBuild"
+        }
+    },
+    "packaging": {
+        "_id_": 62,
+        "_type": "App.Packaging",
+        "icon": {
+            "_id_": 63,
+            "_type": "AdaptiveIcon",
+            "background": {
+                "_id_": 64,
+                "_type": "Color",
+                "color_": -1
+            },
+            "foreground": {
+                "_type": "DrawableReference",
+                "ref": {
+                    "_type": "String",
+                    "value_": "@drawable\/app_icon",
+                    "_id_": 66
+                },
+                "_id_": 65
+            },
+            "legacyIcon": {
+                "_type": "MipmapReference",
+                "ref": {
+                    "_type": "String",
+                    "value_": "@mipmap\/app_icon",
+                    "_id_": 68
+                },
+                "_id_": 67
+            }
+        },
+        "targetSdk": {
+            "_id_": 69,
+            "_type": "Integer",
+            "value_": 34
+        },
+        "label": {
+            "_id_": 70,
+            "_type": "String",
+            "value_": "ViewPager"
+        },
+        "versionName": {
+            "_id_": 71,
+            "_type": "String",
+            "value_": "v1"
+        },
+        "versionCode": {
+            "_id_": 72,
+            "_type": "Integer",
+            "value_": 1
+        },
+        "minSdk": {
+            "_id_": 73,
+            "_type": "Integer",
+            "value_": 24
+        },
+        "permissions": {
+            "_id_": 74,
+            "_type": "App.Permissions"
+        },
+        "packageName": {
+            "_id_": 75,
+            "_type": "String",
+            "value_": "com.aaappps.viewpager"
+        }
+    },
+    "_abVer": 229
+}
